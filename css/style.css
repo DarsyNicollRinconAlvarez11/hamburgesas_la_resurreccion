@@ -43,7 +43,6 @@ section{
         align-self: center;
         background-color: none;
         margin-right: 3.5rem;
-
     }
     .menu a{
         display: flex;
@@ -64,14 +63,12 @@ section{
         height: 86vh;
         padding: 10px;
         grid-template-columns: repeat(2,1fr);
-        
         align-items: center;
     }
     .img-prin{
         display: flex;
         width: 50%;
         height: 60%;
-        border: 1px solid red; 
         margin-right:3.5rem;
     }
     .img-prin img{
@@ -132,16 +129,15 @@ section{
         height: 86vh;
         padding: 10px;
         grid-template-columns: repeat(2,1fr);
-        order: 1px solid red;
         align-items: center;
     }
     .text-about{
+        background: none;
         display: flex;
         width: 48%;
         height: 50%;
         flex-direction: column;
         margin-right: 3.5rem;
-        border: 1px solid red; 
     }
     .text-about h4{
         color: #ff702a;
@@ -170,7 +166,6 @@ section{
         height: 60%;
         flex-direction: column;
         margin-left: 10rem;
-        border: 1px solid red; 
     }
     .img-about img{
         display: flex;
@@ -184,12 +179,9 @@ section{
         height: 3.2rem;
         background-color: #ff702a;
         color:#ffffff;
-        font-family: 'Poppins', sans-serif; /* Tipo de letra */
-        font-size: 1.3rem;
+        font-family: 'Poppins', sans-serif; 
         align-items: center;
-        padding: 20px;
         font-weight: bold;
-        margin-top: 2rem;
         text-align: center;
         box-sizing: border-box;
         border-radius: 1rem;
@@ -229,7 +221,7 @@ section{
         gap: 2rem;
     }
     .img-f1{
-        background-color: #ffefe8;
+        background-color: #ffffff;
     }
     .images{
         width: 95%;
@@ -333,7 +325,6 @@ section{
         font-size: 22px;
         color: white;
         word-spacing: 0.1em;
-        border: 1px solid red;
     }
 
     .tit-cont {
@@ -354,10 +345,7 @@ section{
         width: 2px;
     }
     .redes:hover{
-        background-color: rgb(214, 203, 255);
-    }
-    .f-git:hover{
-        background-color: rgb(214, 203, 255);
+        background-color: #ff702a;
     }
     .f-redes{
         height:58px;
@@ -370,43 +358,159 @@ section{
     .tit-cont a{
         color: white;
     }
+    .linea{
+        border: solid 1px #ff702a;
+    }
+    .linea-mini{
+        border: solid 1px #ff702a;
+        width: 70%;
+        
+    }
       /* <!--RESPONSIVE----------------------------------------------> */
     @media (max-width: 992px) {
         .principal{
             flex-direction: column;
             text-align: center;
             align-items: center;
+            margin: 0%;
+            height:60vh;
         }
         .img-prin{
             justify-content: center;
             margin: 0;
+            padding: 0%;
+            height: 90%;
+        }
+        .img-prin img{
+            height: 100%;
         }
         .tit-prin{
             align-items: center;
             margin: 0;
+        }
+        .menu {
+            order:1;
+        }
+        .tit-prin h1{
+            font-size: 3.5rem;
+            align-items: center;
+            margin: 0;
+        }
+        .tit-prin h2{
+            font-size: 1.5rem;
+            align-items: center;
+            margin: 0;
+    
+        }
+        .boton-prin {
+            font-size: 1.3rem;
+            text-align: center;
+            align-items: center;
+            margin: 0;
+        }
+        /* <!--ABOUT---->*/
+        .segunda-pag{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
         }
         .text-about{
             align-items: center;
             margin: 0;
         }
         .img-about{
-            order: 1;
             margin: 0;
             align-items: center;
         }
-        .segunda-pag{
+        .text-about h4{
+            font-size: 1rem;
+            align-items: center;
+            margin: 0;
+        }
+        .text-about h2{
+            font-size: 1.5rem;
+            align-items: center;
+            margin: 0;
+        }
+        .text-about p{
+            font-size: 1rem;
+            align-items: center;
+            margin: 0;
+        }
+        .boton-about{
+            font-size: 1.3rem;
+            text-align: center;
+            align-items: center;
+            margin: 0;
+            height: 0px;
+        }
+        /* TERCERA PAGINA */
+        .tercera-pag{
             flex-direction: column;
             text-align: center;
             align-items: center;
         }
         
+        /* <!--FOOD MENU--> */
         .img-food{
             flex-direction: column;
-            gap: 5rem;
             align-items: center;
+            margin: 0;
+        }
+        .food{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
         }
         
+        /* <!--ULTIM--> */
         
-        
-
+        .boton-ult{
+            font-size: 1rem;
+            text-align: center;
+            align-items: center;
+            margin: 0;
+        }
+        .baner h1{
+            font-size: 1.1rem;
+            align-items: center;
+            margin: 0;
+        }
+         /* <!--Contactoss--> */
+        .tit-cont {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .tit-cont ul{
+            margin-bottom: 25px;
+        }
+        .tit-cont li{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .linea-mini{
+            border: solid 1px #ff702a;
+            width: 50%;
+            margin: 0 25%;
+        }
+        .grid-general{
+            margin: 15px;
+        }
+        .logo{
+            margin: 15px;
+            font-size: 1rem;
+        }
+        .menu{
+            margin: 2px;
+            font-size: 0.9rem;
+            flex-direction: column;  
+        }
+    
     }
+
+    
+
+    
