@@ -204,16 +204,7 @@ section{
         align-items: center;
     }
     /* <!--FOOD MENU--> */
-    .tercera-pag{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 86vh;
-        padding: 10px;
-        grid-template-columns: repeat(2,1fr);
-        order: 1px solid red;
-        align-items: center;
-    }
+    
     .tit-food h5{
         margin: 1rem 0;
         display: flex;
@@ -334,6 +325,37 @@ section{
         text-align: center;
         padding: 60px 200px;
     }
+     /* <!--Contactoss--> */
+    
+    .contacts{
+        
+        font-family: 'Poppins', sans-serif; 
+        font-size: 22px;
+        font-weight: bold;
+        word-spacing: 0.2em;
+        border: 1px solid red;
+        
+    }
+    .tit-cont{
+        grid-template-columns: repeat(2,1fr);
+        flex-direction: column;
+        display: flex;
+        margin-right: 20px; 
+    }
+    tit-cont h5{
+        gap: 2rem;
+        width: 95%;
+        height: 80%;
+        margin: 10px;
+        
+        background-color: rgb(163, 85, 85);
+    }
+    .tit-cont a{
+        color: white;
+        align-items: right;
+        border: 1px solid red;
+    }
+      /* <!--RESPONSIVE----------------------------------------------> */
     @media (max-width: 992px) {
         .principal{
             flex-direction: column;
@@ -368,6 +390,7 @@ section{
             gap: 5rem;
             align-items: center;
         }
+        
         
         
 
